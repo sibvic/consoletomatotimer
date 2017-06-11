@@ -1,8 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
 
 </Project>
