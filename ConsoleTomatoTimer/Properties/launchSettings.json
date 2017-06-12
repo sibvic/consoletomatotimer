@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleTomatoTimer": {
+      "commandName": "Project",
+      "commandLineArgs": "--timer 2 --silent"
+    }
+  }
+}
