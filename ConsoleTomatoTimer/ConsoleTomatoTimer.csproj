@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
@@ -10,6 +10,7 @@
     <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
     <OutputType>Exe</OutputType>
     <TargetFramework>net461</TargetFramework>
+    <AssemblyName>ctt</AssemblyName>
   </PropertyGroup>
 
 </Project>

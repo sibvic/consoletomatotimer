@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ConsoleTomatoTimer
 {
@@ -11,6 +9,10 @@ namespace ConsoleTomatoTimer
             Console.WriteLine("Console Tomato Timer");
             Console.WriteLine("  Set timer in minues (25 by default):");
             Console.WriteLine("    --timer [min]");
+            Console.WriteLine("  Silent mode:");
+            Console.WriteLine("    --silent");
+            Console.WriteLine("  This help:");
+            Console.WriteLine("    --help");
         }
     }
 }

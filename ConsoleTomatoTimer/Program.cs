@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace ConsoleTomatoTimer
+﻿namespace ConsoleTomatoTimer
 {
     class Program
     {
         static void Main(string[] args)
         {
-            new StartTimerJob().Perform();
+            var job = JobFactory.Create(args);
+            job.Perform();
         }
     }
 }

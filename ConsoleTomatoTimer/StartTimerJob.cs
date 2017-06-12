@@ -9,6 +9,8 @@ namespace ConsoleTomatoTimer
     {
         public int TimerLengthInMinues { get; set; } = 25;
 
+        public bool Silent { get; set; } = false;
+
         public void Perform()
         {
             Console.WriteLine("Starting timer ({0} minutes)", TimerLengthInMinues);
@@ -25,10 +27,14 @@ namespace ConsoleTomatoTimer
             while (elapsedMinutes < TimerLengthInMinues)
             {
                 timerEvent.WaitOne();
-                Console.WriteLine("{1} elapsed, {0} remained", TimerLengthInMinues - elapsedMinutes, elapsedMinutes);
+                if (!Silent)
+                {
+                    Console.WriteLine("{1} elapsed, {0} remained", TimerLengthInMinues - elapsedMinutes, elapsedMinutes);
+                }
                 timerEvent.Reset();
             }
             timer.Dispose();
+            Console.WriteLine("Done!");
         }
     }
 }
